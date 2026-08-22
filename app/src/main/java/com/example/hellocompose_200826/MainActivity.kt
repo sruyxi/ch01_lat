@@ -53,11 +53,11 @@ class MainActivity : ComponentActivity() {
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(
-                            text = "Nama lengkap",
+                            text = "Muhamad Naresh Kiefer Narwandi",
                             style = MaterialTheme.typography.headlineLarge
                         )
                         Text(
-                            text = "NIM: NA",
+                            text = "NIM: 01082240020",
                             style = MaterialTheme.typography.bodyLarge,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -76,7 +76,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(name = "Light Mode", showBackground = true)
+@Preview(name = "Dark Mode", uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
 fun GreetingPreview() {
     HelloCompose_200826Theme {
